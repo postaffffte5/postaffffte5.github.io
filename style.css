@@ -1,0 +1,81 @@
+/* Общий стиль */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0585f5;
+  display: flex; /* Добавленное правило */
+  flex-direction: column; /* Добавленное правило */
+  min-height: 100vh; /* Добавленное правило */
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Стиль шапки */
+header {
+  background-color: #1472db;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Стиль навигации */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+nav ul li:hover > ul.dropdown-menu li {
+  display: block;
+}
+
+/* Стиль выпадающего меню */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1472db;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown-menu li {
+  display: none;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+}
+
+.center-content {
+  text-align: center;
+}
+
+/* Стиль подвала */
+footer {
+  background-color: #1472db;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: auto; /* Добавленное правило */
+}
+
+/* Дополнительные стили для оформления макета могут быть добавлены здесь */
